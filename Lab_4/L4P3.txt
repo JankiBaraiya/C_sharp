@@ -1,0 +1,29 @@
+/*Write a program to accept a number from the user and throw an exception 
+if the number is not an even number*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class L4P3
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter No.");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            if (n % 2 != 0)
+            {
+                throw new Exception("Number is not a even number");
+            }
+            else
+            {
+                Console.WriteLine(n);
+            }
+        }
+    }
+}

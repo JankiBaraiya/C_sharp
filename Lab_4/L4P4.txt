@@ -1,0 +1,47 @@
+/*Write a program to create an abstract class Sum having abstract methods 
+SumOfTwo(int a, int b) and SumOfThree(int a, int b,int c). Create another 
+class Calculate which extends the abstract class and implements the 
+abstract methods*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class L4p4
+    {
+        public static void Main(string[] args)
+        {
+            Calculate c = new Calculate();
+            c.SumOfTwo(5, 10);
+            c.SumOfThree(5, 10, 15);
+
+        }
+        
+    }
+    public abstract class Sum
+    {
+        public abstract void SumOfTwo(int a, int b);
+        public abstract void SumOfThree(int a, int b, int c);
+    }
+
+    public class Calculate : Sum
+    {
+
+        public override void SumOfThree(int a, int b, int c)
+        {
+            int ans_3 = a + b + c;
+            Console.WriteLine("Sum of Three Numbers = {0}", ans_3);
+        }
+
+        public override void SumOfTwo(int a, int b)
+        {
+            int ans_2 = a + b;
+            Console.WriteLine("Sum of Two Numbers = {0}", ans_2);
+        }
+    }
+}
