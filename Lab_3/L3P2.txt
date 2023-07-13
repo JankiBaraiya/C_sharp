@@ -1,3 +1,8 @@
+/*Write a program to create a class Staff having data members as Name, 
+Department, Designation, Experience & Salary. Accept this data for 5
+different staffs and display only names & salary of those staff who are 
+HOD*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
