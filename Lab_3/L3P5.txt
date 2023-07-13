@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Salary s = new Salary(50,100);
+
+        }
+    }
+
+    public class Salary
+    {
+        public Salary(int DA,int HRA)
+        {
+            Console.WriteLine("enter TA:");
+            int TA = Convert.ToInt32(Console.ReadLine());
+            int salary = TA + DA + HRA;
+            Console.WriteLine(salary);
+        }
+    }
+}

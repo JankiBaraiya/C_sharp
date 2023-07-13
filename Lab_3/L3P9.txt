@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Interest i = new Interest();
+            i.get();
+            i.ans();
+        }
+    }
+    public class Account
+    {
+        public int p, r, t;
+        public void get()
+        {
+            Console.WriteLine("enter p:");
+            p = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter r:");
+            r = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter t:");
+            t = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    public class Interest:Account
+    {
+        double interest;
+        public void ans()
+        {
+            interest = (p * r * t) / 100;
+            Console.WriteLine("interest is:{0}", interest);
+        }
+    }
+}
