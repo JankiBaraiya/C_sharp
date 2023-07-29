@@ -1,4 +1,4 @@
-/*rite a program to Create a divide by zero exception and handle it*/
+/*Write a program to Create a divide by zero exception and handle it*/
 
 using System;
 using System.Collections.Generic;
